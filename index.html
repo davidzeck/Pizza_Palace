@@ -16,7 +16,7 @@
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact Us</a></li>
-
+              
             </ul>
           </div>
         </div>   
@@ -38,43 +38,66 @@
       </div>
       <br>
       <br>
-        <div class="col-4">
-            <img src="images/pizza2.jpg" alt="pizza1"
-            stle="width:100%;">
+      <div class="row">
+          <h2>CRAZZY DEALSS</h2>
+          <div class="menu-container">
+            <div class="menu-item">
+              <img src="images/delivery.jpg" />
+              <div class="image-caption"  >Hawain-pizza  PRICE=1400 <button type="button" class="btn btn-info btn-lg modalTrigger" data-toggle="modal" data-target="#myModal">Order Now</button></div>
 
-          
-            <img src="images/pizza3.jpeg" alt="pizza2"
-            stle="width:100%;">
-          
-            <h3>This are examles of some our toppings</h3>
-        
-         
-            <img src="images/small_pizza.jpg" alt="small" stle="width:100%;">
-        </div>
-          <br>
-          <br>
+            </div>
 
-           
-              <img src="images/medium_pizza.png" alt="medium"
-              stle="width:100%;"> 
-          
-           <br>
-           <br>
-           
-            <img src="images/large_pizza.jpg" alt="large"
-            stle="width:100%;">
-           
-        
-          <br>
-          <br>
-          <div class="info">
-            <form>
-              <input type="button" value="MENU" onclick="openwin()">
-            </form>
-          </div>
-        </div>
+            <div class="menu-item">
+              <img src="images/download.jpeg" />
+              <div class="image-caption"  >Neapolitian-pizza  PRICE=1250 <button type="button" class="btn btn-info btn-lg modalTrigger" data-toggle="modal" data-target="#myModal">Order Now</button></div>
+
+            </div>
+            <div class="menu-item">
+              <img src="images/pizza3.jpeg" /> 
+              <div class="image-caption"  >Sicilian-pizza PRICE=1300 <button type="button" class="btn btn-info btn-lg modalTrigger" data-toggle="modal" data-target="#myModal">Order Now</button></div>
+
+            </div>
+            <div class="menu-item">
+              <img src="images/patterns.jpeg" />
+              <div class="image-caption"  >Greek-pizza  PRICE=1200<button type="button" class="btn btn-info btn-lg modalTrigger" data-toggle="modal" data-target="#myModal">Order Now</button></div>
+
+            </div>
+          </div><!-- menu container close-->
     </div>
-    </div>
+    
+    
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Fill in your details to complete your order</h3>
+    <form action="#">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" class="form-control" id="phone">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Location</label>
+        <textarea class="form-control" name="locaion"></textarea>
+      </div>
+      
+
+      <button type="submit" class="btn btn-info btn-lg ">Submit</button>
+    </form>
+  </div>
+
+</div>
+
+
 </body>
 <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
