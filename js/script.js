@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 
 
-
+//input form
 
 var modal = document.getElementById("myModal");
 
@@ -42,18 +42,30 @@ window.onclick = function(event) {
 
 
 $( "#size" ).change(function() {
+  var number_pizza = $('#crust').val();
   var number_pizza = $('#number_pizza').val();
   var size = $('#size').val();
-  var total = number_pizza*size;
+  var total = (number_pizza+size)+crust;
   $('#total_amount').html(total);
 });
 
 $( "#number_pizza" ).keyup(function() {
+  var number_pizza = $('#crust').val();
   var number_pizza = $('#number_pizza').val();
   var size = $('#size').val();
-  var total = number_pizza*size;
+  var total = (number_pizza*size)+crust;
   $('#total_amount').html(total);
 });
+
+
+$( "#crust" ).keyup(function() {
+  var number_pizza = $('#crust').val();
+  var number_pizza = $('#number_pizza').val();
+  var size = $('#size').val();
+  var total = (number_pizza*size)+crust;
+  $('#total_amount').html(total);
+});
+
 
 
 });
