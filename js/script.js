@@ -68,6 +68,16 @@ $( "#crust" ).keyup(function() {
 
 
 
+$( "#crust" ).keyup(function() {
+  var number_pizza = $('#toppings').val();
+  var number_pizza = $('#crust').val();
+  var number_pizza = $('#number_pizza').val();
+  var size = $('#size').val();
+  var total = (number_pizza*size)+crust+toppings;
+  $('#total_amount').html(total);
+});
+
+
 });
 
 
