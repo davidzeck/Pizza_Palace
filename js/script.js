@@ -46,7 +46,7 @@ $( "#size" ).change(function() {
   var crust = $('#crust').val();
   var number_pizza = $('#number_pizza').val();
   var size = $('#size').val();
-  var total = parseInt(number_pizza*size)+crust+toppings;
+  var total =parseInt(number_pizza*size)+ parseInt(crust)+parseInt(toppings);
   $('#total_amount').html(total);
 });
 
@@ -55,27 +55,28 @@ $( "#number_pizza" ).keyup(function() {
   var crust = $('#crust').val();
   var number_pizza = $('#number_pizza').val();
   var size = $('#size').val();
-  var total = parseInt(number_pizza*size)+crust+toppings;
+  var total = parseInt(number_pizza*size)+ parseInt(crust)+parseInt(toppings);
   $('#total_amount').html(total);
 });
 
 
-$( "#toppings" ).change(function() {
+$( "#toppings" ).keyup(function() {
   var toppings = $('#toppings').val();
   var crust = $('#crust').val();
   var number_pizza = $('#number_pizza').val();
   var size = $('#size').val();
-  var total = parseInt(number_pizza*size)+(crust)+(toppings);
+  var total = parseInt(number_pizza*size)+ parseInt(crust)+parseInt(toppings);
   $('#total_amount').html(total);
 });
 
 
-$( "#crust" ).change(function() {
+
+$( "#crust" ).keyup(function() {
   var toppings = $('#toppings').val();
   var crust = $('#crust').val();
   var number_pizza = $('#number_pizza').val();
   var size = $('#size').val();
-  var total = parseInt(number_pizza*size)+crust+toppings;
+  var total = parseInt(number_pizza*size)+ parseInt(crust)+parseInt(toppings);
   $('#total_amount').html(total);
 });
 
