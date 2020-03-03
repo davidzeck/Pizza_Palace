@@ -42,41 +42,42 @@ window.onclick = function(event) {
 
 
 $( "#size" ).change(function() {
-  var number_pizza = $('#crust').val();
+  var toppings = $('#toppings').val();
+  var crust = $('#crust').val();
   var number_pizza = $('#number_pizza').val();
   var size = $('#size').val();
-  var total = (number_pizza+size)+crust;
+  var total = parseInt(number_pizza*size)+crust+toppings;
   $('#total_amount').html(total);
 });
 
 $( "#number_pizza" ).keyup(function() {
-  var number_pizza = $('#crust').val();
+  var toppings= $('#toppings').val();
+  var crust = $('#crust').val();
   var number_pizza = $('#number_pizza').val();
   var size = $('#size').val();
-  var total = (number_pizza*size)+crust;
+  var total = parseInt(number_pizza*size)+crust+toppings;
   $('#total_amount').html(total);
 });
 
 
-$( "#crust" ).keyup(function() {
-  var number_pizza = $('#crust').val();
+$( "#toppings" ).change(function() {
+  var toppings = $('#toppings').val();
+  var crust = $('#crust').val();
   var number_pizza = $('#number_pizza').val();
   var size = $('#size').val();
-  var total = (number_pizza*size)+crust;
+  var total = parseInt(number_pizza*size)+(crust)+(toppings);
   $('#total_amount').html(total);
 });
 
 
-
-$( "#crust" ).keyup(function() {
-  var number_pizza = $('#toppings').val();
-  var number_pizza = $('#crust').val();
+$( "#crust" ).change(function() {
+  var toppings = $('#toppings').val();
+  var crust = $('#crust').val();
   var number_pizza = $('#number_pizza').val();
   var size = $('#size').val();
-  var total = (number_pizza*size)+crust+toppings;
+  var total = parseInt(number_pizza*size)+crust+toppings;
   $('#total_amount').html(total);
 });
-
 
 });
 
